@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #264653; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container {
+    width: 80%; 
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+header, footer {
+    background-color: #264653; 
+    text-align: center;
+    width: 100%; 
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Lucida Handwriting', cursive; 
+    font-size: 36px; 
+    color: #fff; 
+}
+
+header h1:hover {
+    text-shadow: 0 0 5px rgb(255, 132, 0), 0 0 25px rgb(255, 187, 0), 0 0 50px rgb(255, 179, 0), 0 0 100px rgb(255, 204, 0), 0 0 200px rgb(255, 204, 0); /* glow effect on hover */
+    transition: text-shadow 0.3s ease; 
+}
+
+section {
+    margin-bottom: 20px;
+    border-radius: 20px; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 800px; 
+    width: 100%; 
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.section-content img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.section-content p {
+    margin: 0; 
+    transition: transform 0.5s ease, color 0.5s ease; 
+}
+
+.section-content p:hover {
+    transform: translateX(10px); 
+color: black;}
+
+footer {
+    background-color: #20455d; 
+    text-align: center;
+    width: 100%; 
+    padding: 10px; 
+}
+.logo img {
+    width: 30px;
+    margin: 0 10px;
+}
+.welcome-link {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    color: #add8e6; 
+    text-decoration: none;
+}
+
+.welcome-link:hover {
+    color: orange; 
+}

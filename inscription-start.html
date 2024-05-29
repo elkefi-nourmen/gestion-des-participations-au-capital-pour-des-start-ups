@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscrit_start_cap.css" />
+    <title>Inscription</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            if (error === 'exists') {
+                alert('Compte existante');
+            }
+        });
+    </script>
+
+<h1 class="site-name">InnovFin</h1>
+    <form   method="post" action="inscrit.php" id="form1" class="form" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <div class="container">
+               
+
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom" class="form-control">
+                <label for="prenom">Votre prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="form-control">
+
+                <label for="cin">Numéro CIN (8 chiffres) :</label>
+                <input type="text" name="cin" id="cin" class="form-control">
+
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" id="email" class="form-control">
+
+                <label for="entreprise">Nom de l'entreprise :</label>
+                <input type="text" name="entreprise" id="entreprise" class="form-control">
+
+                <label for="adresse">Adresse de l'entreprise :</label>
+                <input type="text" name="adresse" id="adresse" class="form-control">
+
+                <label for="registre">Numéro du registre de commerce :</label>
+                <input type="text" name="registre" id="registre" class="form-control">
+
+                <label for="photo">Photo d'identité :</label>
+                <input type="file" name="photo" id="photo" class="form-control"><br>
+
+                <label for="pseudo">Choisissez un pseudo :</label>
+                <input type="text" name="pseudo" id="pseudo" class="form-control">
+
+                <label for="password">Choisissez un mot de passe (8 caractères min, se terminant par $ ou #) :</label>
+                <input type="password" name="password" id="password" class="form-control"><br>
+                <label for="confirmPassword">Valider votre mot de passe :</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" class="form-control"><br>
+
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary col-6" value="inscription" name="inscription">S'inscrire</button>
+                    <button type="button" class="btn btn-primary col-6" onclick="window.location.href='welcome.html';">Annuler</button>
+
+                </div>
+            </div>
+        </div>
+
+        <p id='erreur'></p>
+    </form>
+
+    <script src='inscrit-start.js' method='POST'></script>
+   
+</body>
+</html>

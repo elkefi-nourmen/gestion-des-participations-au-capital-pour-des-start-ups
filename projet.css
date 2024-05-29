@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #264653;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+header, nav, .contenu, footer {
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #264653; 
+    text-align: center;
+}
+
+/* Header styles */
+header h1 {
+    font-family: 'Lucida Handwriting', cursive; 
+    font-size: 36px; 
+    color: #fff; 
+}
+header h1:hover {
+    text-shadow: 0 0 5px rgb(255, 132, 0), 0 0 25px rgb(255, 187, 0), 0 0 50px rgb(255, 179, 0), 0 0 100px rgb(255, 204, 0), 0 0 200px rgb(255, 204, 0); /* glow effect on hover */
+    transition: text-shadow 0.3s ease; 
+}
+header,
+nav,
+.contenu,
+footer {
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #264653;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8vw;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.contenu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formcontainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    max-width: 400px;
+    color: #b55f04;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.form-control:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff8500;
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.7);
+}
+
+
+
+
+.button-container {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+td{color: black;}
+
+
+thead {
+    background-color: #264653; 
+    color: #fff; 
+}
+
+tbody {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+
+
+tbody tr:hover {
+    background-color: rgba(44, 76, 181, 0.4); 
+}
+#supprimer_button {
+    background-color: #ae2c39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#supprimer_button:hover {
+    background-color: #ff0019;
+}

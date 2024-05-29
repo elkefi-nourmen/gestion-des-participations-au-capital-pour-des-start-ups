@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth_start_cap.css" />
+    <title>Inscription</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const loginError = urlParams.get('login_error');
+            if (loginError === 'true') {
+                alert('pseudo ou mot de passe invalide');
+            }
+        });
+    </script>
+<h1 class="site-name">InnovFin</h1>
+    <form  method="post" action="auth_cap.php" id="form1" class="form">
+        <div class="form-group">
+            <div class="container">
+                <label for="pseudo">Votre pseudo :</label>
+                <input type="text" name="pseudo" id="pseudo" class="form-control">
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" class="form-control"><br>
+<br>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary col-6" name="auth" value="auth">Se connecter</button>
+                    <button type="button" class="btn btn-primary col-6" onclick="window.location.href='welcome.html';">Annuler</button>
+
+                </div>
+            </div>
+        </div>
+        <p id='erreur'></p>
+    </form>
+    <script src='auth-start.js' method='POST'></script>
+</body>
+</body>
+</html>

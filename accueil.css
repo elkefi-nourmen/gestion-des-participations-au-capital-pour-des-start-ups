@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #264653;
+    color: #fff; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative; 
+}
+
+header, nav, .contenu, footer {
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #264653; 
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Lucida Handwriting', cursive; 
+    font-size: 36px; 
+    color: #fff; 
+}
+header h1:hover {
+    text-shadow: 0 0 5px rgb(255, 132, 0), 0 0 25px rgb(255, 187, 0), 0 0 50px rgb(255, 179, 0), 0 0 100px rgb(255, 204, 0), 0 0 200px rgb(255, 204, 0); /* glow effect on hover */
+    transition: text-shadow 0.3s ease; 
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8vw; 
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*align the navbar items */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: orange; 
+}
+
+
+section {
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    border-radius: 20px; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 80%; 
+}
+
+
+section h2 {
+    margin-top: 0; 
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: center;
+}
+
+.section-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.section-content p {
+    margin: 0; 
+}
+
+footer {
+    background-color: #20455d; 
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin: 0 10px;
+}
+.section-content p{
+    margin: 0; 
+    transition: transform 0.5s ease, color 0.5s ease; 
+}
+.section-content p:hover {
+    transform: translateX(10px); 
+    color: rgb(4, 15, 55); 
+}
+.conclusion p {
+    margin: 0; 
+    transition: transform 0.5s ease, color 0.5s ease; 
+}
+
+.conclusion p:hover {
+    transform: translateX(10px);
+    color: rgb(7, 9, 61); 
+}
+
+
+
+
+
+
+
+
